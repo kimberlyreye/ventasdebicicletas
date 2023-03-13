@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Seguridad</title>
+<link rel="stylesheet" href="\yanet\css\bootstrap.min.css">
+<script type="text/javascript" src="\yanet\js\bootstrap.min.js"></script>
+<script type="text/javascript" src="\yanet\css\jquery-3.6.3.min.js"></script>
+<link rel="stylesheet" type="text/css" href="\yanet\css\estilo.css">
+<script>
+function comprobarClave(){
+    clave1 = document.f1.clave1.value
+    clave2 = document.f1.clave2.value
+     
+
+    if (clave1 == "Kimberly" && clave2 == "Reyes"){
+       alert("Los Datos Coinciden...\n Bienvenido");
+        var href =  "html/principal.html";
+        window.location=href;
+         }
+       
+    else{
+       alert("Error...\nIntentelo nuevamente.");
+        var href =  "/yanet/index.html";
+        window.location=href;
+    };
+       
+}  
+</script>
+</head>
+<body>
+<center>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+<h1>Iniciar Sesion</h1>
+<br>
+<form action="" name="f1">
+<center>
+<input class="col-form-label"  id="floatingInput" placeholder="User" name="clave1" size="30">
+<br><br>
+<input type="password" class="col-form-label" placeholder="Password" name="clave2" size="30">
+<br><br>
+<input type="button" value="Ingresar"type="submit" class="btn btn-outline-light" onClick="comprobarClave()"> <a href="prueba2.html" button type="button" class="btn btn-outline-light">Ingrese </a>&nbsp;>
+<br>
+<body background="\todo sirve\src\atardecer.gif" width="3000" height="3000">
+</body>
+
+</body>
+</html>
